@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Abel|Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/registro.css">
+    <title>Registro</title>
+</head>
+
+<body>
+    <!-- Menu superior -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+        <div class="container">
+            <!-- Brand -->
+            <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" alt="FoxPro" /></a>
+
+            <!-- Toggler/collapsibe Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span
+                    class="navbar-toggler-icon"></span> </button>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="#">Inicio</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#about-us">Sobre Nosotros</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#">Iniciar Sesión</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#contact">Contacto</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Contenido -->
+    <div class="container pt-5 pb-5">
+        <div class="card-header text-center">
+            <h2 class="titulo" style="color: white;" >Información de registro</h2>
+        </div>
+        <form action="" mothod="POST" class="pt-3 pb-5">
+            <div class="row ">
+                <!-- Datos basicos-->
+                <div class="col-sm-12 col-md-6">
+                    <div class="form-group">
+                        <p style="color: white;">Usuario</p>
+                        <input type="text" class="form-control" id="name1" placeholder="Usuario">
+                    </div>
+                    <div class="form-group">
+                        <label for="email1" style="color: white;">Dirección de correo electronico</label>
+                        <input type="email" class="form-control" id="email1" placeholder="name@example.com">
+                    </div>
+                    <div class="form-group ">
+                        <label for="pass1" style="color: white;">Contraseña</label>
+                        <input type="password" class="form-control" id="pass1" placeholder="*********">
+                    </div>
+                    <div class="form-group ">
+                        <label for="pass2" style="color: white;">Confirmar contraseña</label>
+                        <input type="password" class="form-control" id="pass2" placeholder="*********">
+                    </div>
+                    <div class="form-group ">
+                        <label for="celphone" style="color: white;">Celular</label>
+                        <input type="number" class="form-control" id="celphone" placeholder="+569-12345678">
+                    </div>
+                </div>
+                <!-- ./Datos basicos-->
+
+
+                <!-- Información médica-->
+                <div class="col-sm-12 col-md-6">
+                    <div class="form-group ">
+                        <label for="edad" style="color: white;">Edad</label>
+                        <input type="number" class="form-control" id="edad" placeholder="20 años">
+                    </div>
+                    <div class="form-group ">
+                        <label for="Estatura" style="color: white;">Estatura (cm)</label>
+                        <input type="number" class="form-control" id="Estatura" placeholder="170 cm">
+                    </div>
+                    <div class="form-group ">
+                        <label for="peso" style="color: white;">Peso (kg)</label>
+                        <input type="number" class="form-control" id="peso" placeholder="56kg">
+                    </div>
+                    <div class="form-group ">
+                        <label for="historial" style="color: white;">Historial clínico</label>
+                        <textarea class="form-control" id="historial"
+                            placeholder="Indica acerca de problemas de salud, cirugias, tratamientos, alergias, entre otros."
+                            rows="5"></textarea>
+                    </div>
+                
+
+
+                <button type="button" class="btn btn-info btn-lg btn-block" id="btn1">Registrar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- ./Contenido -->
+
+
+    <!-- Pié de página -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
+                    <div class="d-flex flex-wrap align-content-center"> <a href="#"><img src="images/logo.png"
+                                alt="logo" /></a>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                            dolor. Ae</p>
+                        <p>&copy; 2021<br></p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
+                    <h5>Nuestros locales</h5>
+                    <p>Lorem ipsum dolor sit
+                        amet, consectetuer adipiscing elit.</p>
+                    <h5>Celular</h5>
+                    <p>253232323232</p>
+                    <h5>Correo electronico</h5>
+                    <p>emailfalso123@ejemploversionfruna.cl</p>
+                    <div class="social-links">
+                        <ul class="nav nav-item">
+                            <li><a href="https://www.facebook.com/fh5co" class="btn btn-secondary mr-1 mb-2"><img
+                                        src="images/facebook.png" alt="facebook" /></a></li>
+                            <li><a href="#" class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png"
+                                        alt="facebook" /></a></li>
+                            <li><a href="#" class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png"
+                                        alt="facebook" /></a></li>
+                            <li><a href="#" class="btn btn-secondary ml-1 mb-2"><img src="images/facebook.png"
+                                        alt="facebook" /></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ./Pié de página -->
+
+    <!-- Scripts Bootstrap-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <!-- ./Scripts Bootstrap-->
+</body>
+
+</html>
