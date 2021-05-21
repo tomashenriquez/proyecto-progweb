@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Anton&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Locales - SuperGym</title>
+
+  <style>
+    #map{
+        height: 400px;
+        width: 100%;
+    }
+</style>
+
+   
+</head>
+<body>
+  <!-- Menu superior -->
+    <nav class="navbar navbar-expand-md navbar-dark">
+      <div class="container-fluid"> 
+        <!-- Brand --> 
+        <a class="navbar-brand mr-auto" href="#"><img src="images/logo.png" alt="FoxPro" /></a> 
+        
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
+        
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"> <a class="nav-link" href="#">Inicio</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="index.html#planes">Planes</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="locales.html">Nuestros Locales</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="index.html#quienes-somos">Sobre Nosotros</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="index.html#contact">Contacto</a> </li>
+              <li class="nav-item"> <a class="nav-link" href="login.html">Iniciar Sesion</a> </li>
+      </div>
+    </nav>
+
+
+  <!-- Contenido -->  
+
+  <div><h1 class="mt-4">LOCALES DE SUPER GYM</h1></div>
+  <main>
+    <div class="container-fluid">
+        <div id="map">
+
+        </div>
+    </div>
+</main>
+  <div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDQIGWwxqna-vFaEqjoInR3pUxH9Xu-Oas&callback=initMap&libraries=&v=weekly" async></script>
+    <script>
+        function initMap(){
+            // Definir posición inicial del mapa
+            // Duoc A. VAras -33.43322711703853, -70.61559467200837
+            const duoc = {lat:-33.43322711703853,lng: -70.61559467200837}
+            // inicializar el mapa indicando el div donde está y las popiedades iniciales
+            const map = new google.maps.Map(
+                document.getElementById("map"),{zoom: 15,center: duoc}
+            );
+
+            const marker = new google.maps.Marker({position:duoc,map:map});
+
+
+        }
+    </script>
+  </div>
+  
+  
+  <!-- Pié de página -->
+  <footer class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 footer1 d-flex wow bounceInLeft" data-wow-delay=".25s">
+          <div class="d-flex flex-wrap align-content-center"> <a href="#"><img src="images/logo.png" alt="logo" /></a>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+              dolor. Ae</p>
+            <p>&copy; 2021<br></p>
+          </div>
+        </div>
+
+        <div class="col-md-3 footer3 wow bounceInRight" data-wow-delay=".25s">
+          <h5>DIRECCIÓN</h5>
+          <p>Lorem ipsum dolor sit 
+            amet, consectetuer adipiscing elit.</p>
+          <h5>TELÉFONO</h5>
+          <p>253232323232</p>
+          <h5>EMAIL</h5>
+          <p>email@example.com</p>
+          <div class="social-links">
+            <ul class="nav nav-item">
+              <li><a href="https://www.facebook.com/fh5co" class="btn btn-secondary mr-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a></li>
+              <li><a href="#"  class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a></li>
+              <li><a href="#"  class="btn btn-secondary mr-1 ml-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a></li>
+              <li><a href="#"  class="btn btn-secondary ml-1 mb-2"><img src="images/facebook.png" alt="facebook" /></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- ./Pié de página -->
+
+  <!-- Scripts Bootstrap-->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="js/jquery-3.3.1.slim.min.js" ></script>
+  <script src="js/popper.min.js" ></script>
+</body>
+</html>
